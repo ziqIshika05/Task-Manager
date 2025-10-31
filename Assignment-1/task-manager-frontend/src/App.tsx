@@ -154,6 +154,26 @@ const App: React.FC = () => {
       ) : (
         <p style={styles.noTasksText}>No tasks to show.</p>
       )}
+
+      <div style={{ textAlign: "center", marginTop: 20 }}>
+      <button
+        onClick={() => window.open("https://forms.gle/GstQFzYiRCYZdcPe7", "_blank")}
+        style={{
+          padding: "10px 20px",
+          fontSize: 16,
+          fontWeight: "bold",
+          color: "white",
+          backgroundColor: "#28a745",
+          border: "none",
+          borderRadius: 6,
+          cursor: "pointer",
+          transition: "background-color 0.3s ease",
+        }}
+      >
+        Give Feedback
+      </button>
+    </div>
+
     </div>
   );
 };
